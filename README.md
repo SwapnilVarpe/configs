@@ -1,2 +1,2 @@
 # configs
-Configs
+* .kakrc: My Kokoune editor config.
