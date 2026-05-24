@@ -11,16 +11,14 @@ colorscheme solarized-dark
 # Always keep one line and three columns displayed around the cursor
 set-option global scrolloff 1,3
 
-# Display the status bar on top
-set-option global ui_options ncurses_status_on_top=true
-
 # copy paste mapping
 map global user y '<a-|> pbcopy <ret>' -docstring 'Copy selected text to system keyboard'
-
 
 # Softwrap line
 add-highlighter global/ wrap -word -indent
 
 # Open kakrc file
 map global user c ': edit "%val{config}/kakrc"<ret>' -docstring 'Open kakrc file'
+
+# Write all files
 map global user w ': wa<ret>' -docstring 'Write all files'
